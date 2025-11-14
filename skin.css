@@ -1,0 +1,13 @@
+
+/* Frosted DualSense Skin */
+.controller.custom {
+    background: url('frosted_controller.png') no-repeat center center;
+    width: 1024px;
+    height: 680px;
+    background-size: contain;
+}
+
+/* Button positions — placeholder, user will adjust */
+.button {
+    opacity: 0.8;
+}
