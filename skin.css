@@ -8,18 +8,12 @@ body {
 /* Make sure we hit whatever controller GPV is rendering */
 .controller {
   position: relative;
-  width: 900px;              /* tweak if needed */
-  height: 600px;             /* tweak if needed */
+  width: 900px;
+  height: 600px;
   margin: 0 auto;
   background: url("https://raw.githubusercontent.com/Metzicle/gamepad-skin/main/frosted_controller.png")
               no-repeat center center;
   background-size: contain;
-}
-
-/* Hide any default controller image underneath */
-.controller img,
-.controller canvas {
-  opacity: 0;
 }
 
 /* Buttons – start simple so we at least see them in roughly correct places */
