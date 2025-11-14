@@ -1,13 +1,63 @@
+/* --- Frosted PS5 Controller Skin for Gamepad Viewer --- */
 
-/* Frosted DualSense Skin */
+/* Load controller image */
 .controller.custom {
-    background: url('frosted_controller.png') no-repeat center center;
-    width: 1024px;
-    height: 680px;
+    background: url("https://raw.githubusercontent.com/Metzicle/gamepad-skin/main/frosted_controller.png") no-repeat center center;
     background-size: contain;
+    width: 900px;
+    height: 700px;
 }
 
-/* Button positions — placeholder, user will adjust */
-.button {
-    opacity: 0.8;
+/* Hide default controller */
+.controller.ds4 {
+    display: none !important;
 }
+
+/* POSITION BUTTONS */
+
+/* D-Pad */
+#button-up { left: 255px; top: 235px; }
+#button-down { left: 255px; top: 325px; }
+#button-left { left: 215px; top: 280px; }
+#button-right { left: 295px; top: 280px; }
+
+/* Face Buttons (Square / Triangle / Circle / Cross) */
+#button-square { left: 585px; top: 270px; }
+#button-triangle { left: 625px; top: 230px; }
+#button-circle { left: 665px; top: 270px; }
+#button-cross { left: 625px; top: 320px; }
+
+/* L3 & R3 (Sticks) */
+#button-l3 { left: 340px; top: 360px; }
+#button-r3 { left: 515px; top: 360px; }
+
+/* Options & Share */
+#button-share { left: 320px; top: 200px; }
+#button-options { left: 540px; top: 200px; }
+
+/* PS Button */
+#button-ps { left: 430px; top: 300px; }
+
+/* Touchpad */
+#touchpad { left: 300px; top: 140px; width: 300px; height: 120px; }
+
+/* Bumpers L1 / R1 */
+#button-l1 { left: 260px; top: 110px; }
+#button-r1 { left: 600px; top: 110px; }
+
+/* TRIGGERS — FLOATING ABOVE CONTROLLER */
+#button-l2 {
+    left: 300px;
+    top: 10px;
+    transform: scale(1.4);
+}
+
+#button-r2 {
+    left: 560px;
+    top: 10px;
+    transform: scale(1.4);
+}
+
+/* Reduce opacity when not pressed */
+button { opacity: 0.4; }
+button.pressed { opacity: 1; }
